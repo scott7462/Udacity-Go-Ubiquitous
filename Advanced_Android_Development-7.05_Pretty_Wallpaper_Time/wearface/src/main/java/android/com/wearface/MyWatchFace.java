@@ -330,8 +330,8 @@ public class MyWatchFace extends CanvasWatchFaceService {
             }
 
             String time = isRegisteredTimeZoneReceiver
-                    ? Utils.getStringPatternFromDateTime("HH:mm", DateTime.now())
-                    : Utils.getStringPatternFromDateTime("HH:mm:ss", DateTime.now());
+                    ? Utils.getStringPatternFromDateTime(getString(R.string.hh_mm_formatter), DateTime.now())
+                    : Utils.getStringPatternFromDateTime(getString(R.string.hh_mm_ss_formatter), DateTime.now());
 
             // Draw time text in x-center of screen
             float timeTextWidth = timeTextPaint.measureText(time);
@@ -339,7 +339,7 @@ public class MyWatchFace extends CanvasWatchFaceService {
             float xOffsetTime = bounds.centerX() - halfTimeTextWidth;
             canvas.drawText(time, xOffsetTime, timeOffset, timeTextPaint);
 
-            String date = Utils.getStringPatternFromDateTime("EEE, MMM dd yyyy", DateTime.now())
+            String date = Utils.getStringPatternFromDateTime(getString(R.string.date_with_day_formatter), DateTime.now())
                     .toUpperCase(Locale.US);
 
             canvas.drawText(date, bounds.centerX() - dateTextPaint.measureText(date) / 2
@@ -396,7 +396,7 @@ public class MyWatchFace extends CanvasWatchFaceService {
         @Override
         public void onConnectionFailed(ConnectionResult connectionResult) {
             if (connectionResult.getErrorCode() == 2) {
-                Toast.makeText(getBaseContext(), "Update Google play version", Toast.LENGTH_LONG).show();
+                Toast.makeText(getBaseContext(), R.string.update_google_play, Toast.LENGTH_LONG).show();
             }
         }
 

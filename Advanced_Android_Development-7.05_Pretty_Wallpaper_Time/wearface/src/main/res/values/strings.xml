@@ -2,4 +2,8 @@
     <string name="app_name">Wearface</string>
     <string name="message">Watch face tapped</string>
     <string name="my_digital_name">Sunshine Wear Face</string>
+    <string name="update_google_play">Update Google play version</string>
+    <string name="date_with_day_formatter">EEE, MMM dd yyyy</string>
+    <string name="hh_mm_formatter">HH:mm</string>
+    <string name="hh_mm_ss_formatter">HH:mm:ss</string>
 </resources>
