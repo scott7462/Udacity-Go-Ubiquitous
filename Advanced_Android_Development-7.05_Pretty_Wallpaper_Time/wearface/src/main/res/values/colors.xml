@@ -2,4 +2,9 @@
 <resources>
     <color name="background">#000000</color>
     <color name="digital_text">#ffffff</color>
+    <color name="digital_text_white">@android:color/white</color>
+    <color name="digital_text_black">@android:color/background_dark</color>
+
+    <color name="primary">#03A9F4</color>
+
 </resources>

@@ -4,5 +4,15 @@
     <dimen name="digital_text_size_round">45dp</dimen>
     <dimen name="digital_x_offset">15dp</dimen>
     <dimen name="digital_x_offset_round">25dp</dimen>
-    <dimen name="digital_y_offset">90dp</dimen>
+    <dimen name="digital_y_offset">150dp</dimen>
+
+    <dimen name="time_text_size">35dp</dimen>
+
+    <dimen name="date_text_size">15dp</dimen>
+
+    <dimen name="temperature_text_size">22dp</dimen>
+    <dimen name="time_top_margin">80dp</dimen>
+    <dimen name="date_top_margin">100dp</dimen>
+    <dimen name="weather_top_margin">150dp</dimen>
+
 </resources>
